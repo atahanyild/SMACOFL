@@ -1,0 +1,18 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+smacofl = "E2xY5XEm4zuWUWhCGQ4CYWUEdDrbp5H4NHaZQHWSG8df"
+
+[programs.devnet]
+smacofl = "E2xY5XEm4zuWUWhCGQ4CYWUEdDrbp5H4NHaZQHWSG8df"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/atahanyild/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
