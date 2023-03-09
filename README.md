@@ -2,7 +2,7 @@ Project Name:SMACOFL
 
 Description:SMACOFL is a website where you can hire freelancer smart contract developers to develop your contract, or find your next smart contract project job as a freelancer.
 
-Problem: In present freelancer services, website is only the middleman, however it gets a commission in every deal.Also some reliance problems may occur between hirer and freelancer like one of them may quit the job, or dont pay afterwards.
+Problem: In present freelancer services, website is only the middleman, however it gets a fee in every deal.Also some reliance problems may occur between hirer and freelancer like one of them may quit the job, or dont pay afterwards.
 
 How to solve?: SMACOFL, runs a smart contract for every deal.Payment will be automaticly done by smart contract.Also if one of the hirer or freelancer quits, it pays a penalty payment from who quits to the other.
 
@@ -12,7 +12,7 @@ Whenever one of the hirer or freelancer quits, smart contract makes a penalty pa
 
 
 Benefits: SMACOFL increases the trust between sides and decrease the possibility to scam for both ends.
-It doesnt get fee, so it is cheaper a cheaper way then traditional ones.
+It doesnt get fee, so it is a cheaper way then traditional ones.
 In a common freelancer website, there is so many topics so its more complicated.SMACOFL is only for smart contract development, so it is simpler to find a job or a freelancer.
 
 It is still in progress.I have only finished Smart Contract side.I will build a website in the future.
