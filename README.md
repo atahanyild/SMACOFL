@@ -4,7 +4,7 @@ Description: SMACOFL is a website where you can hire freelancer smart contract d
 
 Problem: In present freelancer services, website is only the middleman. However, it gets a fee in every deal also some reliance problems may occur between hirer and freelancer like one of them may quit the job or dont pay afterwards.
 
-How to solve?: SMACOFL runs a smart contract for every deal. Payment will be automaticly done by smart contract also if one of the hirer or freelancer quits, it pays a penalty payment from who quits to the other.
+How to solve: SMACOFL runs a smart contract for every deal. Payment will be automaticly done by smart contract also if one of the hirer or freelancer quits, it pays a penalty payment from who quits to the other.
 
 Features: Hirer and freelancer decides on milestones of project, whenever they complete a milestone of the project contract automaticly pays the certain amount of money for every milestone from hirer to freelancer.
 Last milestone worths 3 times then a common one. It incentivise the freelancer to complete and not to quit when they have good amount of money.
