@@ -31,7 +31,7 @@ pub mod smacofl {
         Ok(())
     }
 
-    pub fn complate(ctx: Context<Complate>) -> Result<()>{
+    pub fn complete(ctx: Context<Complete>) -> Result<()>{
         use super::*;
         let work_contract = &mut ctx.accounts.contract;
         let from = ctx.accounts.from.to_account_info();
@@ -40,9 +40,9 @@ pub mod smacofl {
         let milestones= work_contract.milestones;
         let amount_of_lamports = work_contract.one_milestone_value*3;
         
-        msg!("in complate");
+        msg!("in complete");
         if milestones==done_milestones{
-            msg!("contract is complated");
+            msg!("contract is completed");
             work_contract.is_done=true;
             work_contract.is_active=false;
             **from.try_borrow_mut_lamports()? -= amount_of_lamports;
@@ -52,7 +52,7 @@ pub mod smacofl {
         Ok(())
     }
 
-    pub fn complate_milestone(ctx: Context<ComplateMilestone>) -> Result<()>{
+    pub fn complete_milestone(ctx: Context<CompleteMilestone>) -> Result<()>{
         let work_contract=  &mut ctx.accounts.contract;
         let from = ctx.accounts.from.to_account_info();
         let to = ctx.accounts.to.to_account_info();
@@ -94,7 +94,7 @@ pub struct Initialize<'info> {
 }
 
 #[derive(Accounts)]
-pub struct Complate<'info> {
+pub struct Complete<'info> {
     #[account(mut,seeds=[signer.key.as_ref()],bump)]
     pub contract: Account<'info, Work_contract>,
 
@@ -112,7 +112,7 @@ pub struct Complate<'info> {
 
 //tekrarbak
 #[derive(Accounts)]
-pub struct ComplateMilestone<'info> {
+pub struct CompleteMilestone<'info> {
     #[account(mut,seeds=[signer.key.as_ref()],bump)]
     pub contract: Account<'info, Work_contract>,
 
